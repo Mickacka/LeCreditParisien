@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<users>
+    <user>
+      <login>tudor</login>
+      <passwd>Vanille95*</passwd>
+      <email>tudor@lcp.com</email>
+      <profile>Administrateur</profile>
+    </user>
+    <user>
+      <login>tata</login>
+      <passwd>yoyo</passwd>
+      <email>tatayoyo@lcp.com</email>
+      <profile>Administrateur</profile>
+    </user>
+    <user>
+      <login>midoif</login>
+      <passwd>passw1</passwd>
+      <email>midoif-id@externe.lcp.com</email>
+      <profile>Opératrice de saisie</profile>
+    </user>
+    <user>
+      <login>anthony</login>
+      <passwd>anthony</passwd>
+      <email>anthony-b@externe.lcp.com</email>
+      <profile>Consultation</profile>
+    </user>
+</users>
