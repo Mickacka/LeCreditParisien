@@ -15,6 +15,8 @@ namespace DataService.DAOService
         private string password;
         private string databasename;
 
+        static public GestionBDD bBDD = new GestionBDD("localhost", "csharp", "csharp123", "projet_csharp");
+        
         //Constructeur
         public GestionBDD(string machine, string schema, string pwd, string bdd)
         {

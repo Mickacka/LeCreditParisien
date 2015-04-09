@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DesktopIHM.GuiObjects;
+using DataService.BSDataObjects;
+using DataService.BSService;
 
 namespace DesktopIHM
 {
@@ -114,10 +116,31 @@ namespace DesktopIHM
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Client c = new Client();
+            c.Nom = textBox1.Text;
+            c.Prenom = textBox2.Text;
+            c.DateNaissance = dateTimePicker1.Value;
+            c.Email = textBox3.Text;
+            c.AdressePrincipale = textBox4.Text + " | " + textBox5.Text + "  " + textBox6.Text;
+            c.AdresseTemporaire = textBox9.Text + " | " + textBox8.Text + " " + textBox7.Text;
+            c.TelFixe = textBox11.Text;
+            c.TelPortable = textBox10.Text;
+            BSGestionClient bsgc = new BSGestionClient();
+            if (bsgc.CreerModifierClient(c))
+            {
+                /* popup */
+            }
+            else { 
+                /* popup */
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }             
